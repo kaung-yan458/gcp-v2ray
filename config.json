@@ -14,6 +14,15 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/ssl/certs/fullchain.pem",
+              "keyFile": "/etc/ssl/private/privkey.pem"
+            }
+          ]
+        },
         "wsSettings": {
           "path": "/TG-@act"
         }
